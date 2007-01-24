@@ -1,0 +1,7 @@
+Changes
+Makefile.PL
+MANIFEST
+README
+lib/Catalyst/Plugin/DBIC/Schema/Profiler.pm
+lib/Catalyst/Plugin/DBIC/Schema/Profiler/DebugObj.pm
+t/01_use.t
