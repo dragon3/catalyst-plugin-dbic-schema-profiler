@@ -40,15 +40,15 @@ sub prepare {
     $c = $c->NEXT::prepare(@_);
 
     my $model_name = $c->config->{'DBIC::Schema::Profiler'}->{MODEL_NAME}
-        || return $c;
+      || return $c;
 
-    if ($c->debug) {
-        $c->model($model_name)->storage->debug(1);
-        $c->model($model_name)->storage->debugobj(
+    if ( $c->debug ) {
+        $c->model($model_name)->schema->storage->debug(1);
+        $c->model($model_name)->schema->storage->debugobj(
             Catalyst::Plugin::DBIC::Schema::Profiler::DebugObj->new(
                 log => $c->log
             )
-            );
+        );
     }
 
     return $c;
