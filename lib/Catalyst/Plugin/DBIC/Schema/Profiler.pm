@@ -8,7 +8,7 @@ use warnings;
 use NEXT;
 use Catalyst::Plugin::DBIC::Schema::Profiler::DebugObj;
 
-our $VERSION = '0.04';
+our $VERSION = '0.05';
 
 =head1 NAME
 
