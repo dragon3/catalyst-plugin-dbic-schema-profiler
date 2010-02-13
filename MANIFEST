@@ -24,4 +24,3 @@ t/lib/TestApp/Controller/Session.pm
 t/lib/TestApp/Model/DBICSchema.pm
 t/lib/TestApp/Schema.pm
 t/lib/TestApp/Schema/Session.pm
-t/session.db
