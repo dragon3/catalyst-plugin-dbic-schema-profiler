@@ -19,6 +19,10 @@ BEGIN {
       or plan skip_all =>
       "Catalyst::Model::DBIC::Schema is required for this test";
 
+    eval { require Catalyst::Plugin::Session::Store::DBIC }
+      or plan skip_all =>
+      "Catalyst::Plugin::Session::Store::DBIC is required for this test";
+
     $ENV{TESTAPP_DB_FILE} = "$FindBin::Bin/session.db";
 
     $ENV{TESTAPP_CONFIG} = {
