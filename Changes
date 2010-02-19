@@ -1,5 +1,8 @@
 Revision history for Perl extension Catalyst::Plugin::DBIC::Schema::Profiler.
 
+0.06 2010-02-19 21:22
+    - Fix test fail when Catalyst::Plugin::Session::Store::DBIC is not installed.
+
 0.05 2010-02-13 21:54
     - Fix RT #53355 ( thanks Matthias )
       https://rt.cpan.org/Ticket/Display.html?id=53355
